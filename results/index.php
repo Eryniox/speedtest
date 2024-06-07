@@ -52,7 +52,7 @@ function formatSpeedtestDataForImage($speedtest)
     $speedtest['dl'] = format($speedtest['dl']);
     $speedtest['ul'] = format($speedtest['ul']);
     $speedtest['ping'] = format($speedtest['ping']);
-    $speedtest['jit'] = format($speedtest['jitter']);
+    $speedtest['jitter'] = format($speedtest['jitter']);
     $speedtest['timestamp'] = $speedtest['timestamp'];
 
     $ispinfo = json_decode($speedtest['ispinfo'], true)['processedString'];
@@ -162,7 +162,7 @@ function drawImage($speedtest)
     $POSITION_Y_WATERMARK = 223 * $SCALE;
 
     // configure labels
-    $MBPS_TEXT = 'Mbps';
+    $MBPS_TEXT = 'Mbit/s';
     $MS_TEXT = 'ms';
     $PING_TEXT = 'Ping';
     $JIT_TEXT = 'Jitter';
